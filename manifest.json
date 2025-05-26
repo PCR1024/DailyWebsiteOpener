@@ -1,0 +1,18 @@
+{
+  "manifest_version": 3,
+  "name": "Daily Website Opener",
+  "version": "1.0",
+  "description": "Opens specific websites once per day when Chrome starts",
+  "background": {
+    "service_worker": "background.js"
+  },
+  "permissions": [
+    "storage",
+    "tabs"
+  ],
+  "action": {
+    "default_icon": "icon.png",
+    "default_popup": "popup.html"
+  },
+  "options_page": "options.html"
+}

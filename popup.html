@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>每日网站打开器</title>
+  <meta charset="UTF-8">
+  <style>
+    body {
+      width: 250px;
+      padding: 15px;
+      font-family: 'Segoe UI', 'San Francisco', 'Helvetica Neue', sans-serif;
+    }
+    h2 {
+      margin-top: 0;
+      color: #1a73e8;
+    }
+    .button {
+      display: block;
+      width: 100%;
+      background-color: #1a73e8;
+      color: white;
+      border: none;
+      padding: 8px 0;
+      text-align: center;
+      border-radius: 4px;
+      cursor: pointer;
+      text-decoration: none;
+      margin-top: 10px;
+    }
+    .info {
+      margin-top: 12px;
+      font-size: 13px;
+      color: #5f6368;
+    }
+  </style>
+</head>
+<body>
+  <h2>每日网站打开器</h2>
+  <p>Chrome启动时自动打开您设置的网站列表（每天只打开一次）。</p>
+  
+  <button id="open-options" class="button">管理网站列表</button>
+  <button id="open-now" class="button">立即打开网站</button>
+  
+  <div class="info">
+    <div id="status"></div>
+  </div>
+  
+  <script src="popup.js"></script>
+</body>
+</html>
